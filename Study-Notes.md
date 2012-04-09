@@ -6,7 +6,8 @@ Calendar
 
 4/1/12: initial research and PearsonVUE registration. Waiting for confirmation mail...
 4/2/12: confirmation mail arrived, voucher bought and test marked in june 12th.
-4/5/12: calendar started
+4/5/12: calendar started.
+4/8/12: started reading Kathy Sierra's book.
 
 Certification
 -------------

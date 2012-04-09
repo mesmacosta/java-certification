@@ -1,0 +1,4 @@
+package cert;
+class Beverage {
+  
+}
