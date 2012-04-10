@@ -10,3 +10,8 @@ Chapter 1
 * Interfaces can't declare static methods.
 * Interfaces define instance methods! (same as above)
 * Static methods can't be overridden.
+* Overridding a method must match the return type.
+* Class member = instance variables + methods.
+* protected = package plus kids
+* If there are two classes on the same file, when compiled two `.class` are created.
+* An protected member inherited from another package cannot be invoked in instances, only through inheritance.
