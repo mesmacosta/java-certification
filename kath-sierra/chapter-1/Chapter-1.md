@@ -15,3 +15,9 @@ Chapter 1
 * protected = package plus kids
 * If there are two classes on the same file, when compiled two `.class` are created.
 * An protected member inherited from another package cannot be invoked in instances, only through inheritance.
+* A method cannot be `abstract` and `static` at the same time!
+* Local variables are always on the stack. Objects and arrays are always on the heap.
+* Instance variables get default values, local variables don't.
+* Final variables must be initialized before the completion of the constructor.
+* enums can't be declared inside methods.
+* Semicolon is optional after declaration of an enum.
