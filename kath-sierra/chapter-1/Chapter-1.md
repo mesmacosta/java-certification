@@ -21,3 +21,16 @@ Chapter 1
 * Final variables must be initialized before the completion of the constructor.
 * enums can't be declared inside methods.
 * Semicolon is optional after declaration of an enum.
+
+Exercises
+---------
+
+1. C     ✔
+2. B,D   ✔
+3. A,E   ✔
+4. F     ✗
+5. D     ✗
+6. A     ✔
+7. C,D,F ✔
+8. B     ✔
+9. A     ✗
