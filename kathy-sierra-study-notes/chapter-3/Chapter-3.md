@@ -18,6 +18,28 @@ Chapter 3
 * If, for a method invocation, an argument must be:
     - widen then boxed: compilation error!
     - boxed then widen: just fine!
+* Garbage collection questions do not apply to Strings.
+* The `finalize()` method can save the object from being elegible for garbage collection. However, it ever is elegible again, the garbage collector won't bother running `finalize()` again.
+* Defining an array as {1,2,} is allowed.
+* Pay attention to objects inside other objects on GC questions!
+* Remember the need to downcast an literal int to an short!
+* Instance init blocks run right after the call to `super()` in a constructor.
+* Private instance variables of an enum are accessible by the class they are declared into.
+* It's not valid to shadow a method variable with a block variable.
 
 Exercises
 ---------
+
+1.  B   ✗
+2.  B   ✗
+3.  G   ✗
+4.  F   ✔
+5.  A   ✔
+6.  D   ✔
+7.  C   ✗
+8.  C   ✗
+9.  A   ✔
+10. C,G ✗
+11. B   ✔
+12. A   ✔
+13. E   ✔
