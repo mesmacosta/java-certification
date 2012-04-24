@@ -32,3 +32,5 @@ Exercises
 8.  C   ✔
 9.  C,F ✔
 10. D   ✔
+
+Result: 90% :))

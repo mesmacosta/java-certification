@@ -43,3 +43,5 @@ Exercises
 11. B   ✔
 12. A   ✔
 13. E   ✔
+
+Result: 53.84% :(

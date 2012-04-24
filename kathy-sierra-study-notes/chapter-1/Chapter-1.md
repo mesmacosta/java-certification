@@ -34,3 +34,5 @@ Exercises
 7. C,D,F ✔
 8. B     ✔
 9. A     ✗
+
+Result: 66.66% :)
