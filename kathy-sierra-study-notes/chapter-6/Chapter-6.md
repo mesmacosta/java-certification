@@ -16,6 +16,11 @@ Chapter 6
 * A serializable class extending a non-serializable class will retain it's state, but the parent's constructor will run!
 * Another way to say this is: on deserialization, the first class non-serializable on the hierarchy will have it's constructor run. Therefore, calling all parents constructor.
 * Serialization applies only to objects, nothing `static` will be touched.
+* Calendar is and abstract class! Instanciate it using `Calendar.getInstance()`.
+* DateFormat is abstract as well.
+* `parse()` from DateFormat may throw an ParseException.
+* Months in Calendar API are zero-indexed.
+* In regexps, `\w` also matches digits and undescore, in addition to letters.
 
 Exercises
 ---------
