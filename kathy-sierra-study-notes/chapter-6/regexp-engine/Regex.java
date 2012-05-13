@@ -1,3 +1,7 @@
+/*
+ * Regexp test engine proposed in page 537.
+ */
+
 import java.util.regex.*;
 import java.io.Console;
 class Regex {

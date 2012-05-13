@@ -21,9 +21,59 @@ Chapter 6
 * `parse()` from DateFormat may throw an ParseException.
 * Months in Calendar API are zero-indexed.
 * In regexps, `\w` also matches digits and undescore, in addition to letters.
+* Scanner default delimiter is whitespace.
+* Another way to read from terminal (besides using Console) is using System.in.
+* Formatter classes round the number, they don't truncate it.
+* `equals()` only accepts parameter of the same type of the reciever.
+* `mkdir()` and `createNewFile()` are File methods.
+* `DateFormat.getInstace()` doesn't take a Locale. `getDateInstace()` does.
+* Transient properties are initialized with default values on deserialization process.
 
 Exercises
 ---------
-✔✗
 
-Result: 
+1.  E       ✔
+2.  C       ✔
+3.  A,B,C,D ✗
+4.  A       ✔
+5.          ✗
+
+    import java.io.File;
+
+    class Maker {
+      public static void main(String[] args) {
+        try {
+          File dir = new File("dir3");
+          dir.creteNewDir();
+          File file = new File(dir, "file3");
+          file.createFile();
+        } catch (Exception x) {}
+      }
+    }
+
+6.          ✔
+
+    import java.util.*;
+    import java.text.*;
+
+    class DateTwo {
+      public static void main(String[] args) {
+        Date d = new Date(1119280000000L);
+
+        DateFormat df = DateFormat.getDateInstance(
+                        DateFormat.LONG, Locale.GERMANY);
+        System.out.println(df.format(d));
+      }
+    }
+
+7.  A,B     ✔
+8.  E,F     ✗
+9.  D,F     ✔
+10. E       ✔
+11. D       ✔
+12. A,B     ✔
+13. D,F,G   ✔
+14. B       ✔
+15. F       ✔
+
+Result: 80% Yey :)
