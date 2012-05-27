@@ -5,6 +5,7 @@ Chapter 9
 * If a class implements `Runnable` the way to make the thread run is `new Thread(new RunnableImpl())`.
 * The same job - `Runnable` implementer - can be passed to multiple Threads.
 * `sleep()` and `yield()` are static methods, which mean when we call `t.sleep()` and t is another thread, we cause the current thread to sleep!
+* When a thread is made by implementing runnable, it won't inherit methods like `getName()`, therefore, they should be called using `Thread.currentThread().getName()`.
 
 Exercises
 ---------
