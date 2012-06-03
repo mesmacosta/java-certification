@@ -146,19 +146,19 @@ Chapter 4
 4.  G   ✔
 5.      ✔
 
-    class Incr {
-        public static void main(String[] args) {
-            Integer x = 7;
-            int y = 2;
+        class Incr {
+            public static void main(String[] args) {
+                Integer x = 7;
+                int y = 2;
 
-            x *= x;
-            y *= y;
-            y *= y;
-            x -= y;
+                x *= x;
+                y *= y;
+                y *= y;
+                x -= y;
 
-            System.out.println(x);
+                System.out.println(x);
+            }
         }
-    }
 
 6.  C   ✔
 7.  A   ✔
@@ -242,33 +242,33 @@ Chapter 6
 4.  A       ✔
 5.          ✗
 
-    import java.io.File;
+        import java.io.File;
 
-    class Maker {
-      public static void main(String[] args) {
-        try {
-          File dir = new File("dir3");
-          dir.creteNewDir();
-          File file = new File(dir, "file3");
-          file.createFile();
-        } catch (Exception x) {}
-      }
-    }
+        class Maker {
+          public static void main(String[] args) {
+            try {
+              File dir = new File("dir3");
+              dir.creteNewDir();
+              File file = new File(dir, "file3");
+              file.createFile();
+            } catch (Exception x) {}
+          }
+        }
 
 6.          ✔
 
-    import java.util.*;
-    import java.text.*;
+        import java.util.*;
+        import java.text.*;
 
-    class DateTwo {
-      public static void main(String[] args) {
-        Date d = new Date(1119280000000L);
+        class DateTwo {
+          public static void main(String[] args) {
+            Date d = new Date(1119280000000L);
 
-        DateFormat df = DateFormat.getDateInstance(
-                        DateFormat.LONG, Locale.GERMANY);
-        System.out.println(df.format(d));
-      }
-    }
+            DateFormat df = DateFormat.getDateInstance(
+                            DateFormat.LONG, Locale.GERMANY);
+            System.out.println(df.format(d));
+          }
+        }
 
 7.  A,B     ✔
 8.  E,F     ✗
