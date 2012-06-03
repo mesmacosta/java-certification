@@ -1,13 +1,13 @@
 Chapter 7
 =========
 
-* `equals()` takes and Object as parameter.
+* `equals()` takes and `Object` as parameter.
 * `equals()`, `hashCode()` and `toString()` are public. Default access would break, in overriding.
-* If one overrides `equals()`, must override `hashCode()` as well. They are used in Hashes.
+* If one overrides `equals()`, he/she must override `hashCode()` as well. They are used in hashes.
 * Don't use transient instance variables in part of the logic for `equals()` or `hashCode()` as the same object would fail the test after being serialized and deserialized.
 * When using hashes, override the `hashCode()` method of the objects being inserted. This guarantees that meaningfully equal objects aren't present in the hash.
 * `Arrays.binarySearch()` must receive the argument already ordered. The same sorting criteria must be used in both steps.
-* `Arrays.asList()` creates a fixed-size List in which alterations are reflected in original array.
+* `Arrays.asList()` creates a fixed-size `List` in which alterations are reflected in original array.
 * `List.toArray()` may return an `Object[]` or receive a parameter that is an array for it to populate.
 * On natural sorting of arrays, spaces come before upper case letters that come before lower case letters. This way, smaller words come before Names that come before regular words.
 * Type safe Collections, using Generics, may be mixed with unsafe code. The variable may be passed as parameter to an old method, for instance. In this case, the old method may insert anything it wants in the collection. Including a different kind of object.
@@ -16,12 +16,12 @@ Chapter 7
 * `<? extends Class>` is used for read-only methods.
 * `<? super   Class>` is used for read-write methods.
 * `<? extends Object>` is the same as `<?>`.
-* PriorityQueue are FIFO.
-* PriorityQueue is sorted by natural order.
-* PriorityQueue doesn't offer access by index.
+* `PriorityQueue` are FIFO.
+* `PriorityQueue` is sorted by natural order.
+* `PriorityQueue` doesn't offer access by index.
 * `add()` and `offer()` are the same.
 * `ArrayList<Class> a = methodThatReturnsList()` doesn't compile. It's trying to assign a parent in a child type variable.
-* For an object to be inserted in a TreeSet (or any other collection that sorts elements) it must implement Comparable. Otherwise, an exception will be thrown at runtime.
+* For an object to be inserted in a `TreeSet` (or any other collection that sorts elements) it must implement `Comparable`. Otherwise, an exception will be thrown at runtime.
 
 Exercises
 ---------

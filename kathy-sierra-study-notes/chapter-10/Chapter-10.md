@@ -2,12 +2,12 @@ Chapter 10
 ==========
 
 * Use static imports as `import static ...`.
-* In case of ambiguity, the complete referece must be writter. For instance, static importing Integer and Long will clash the `MAX_VALUE` constant, use it as `Integer.MAX_VALUE`.
-* An static import can be of a class! It must of static properties of a class.
-* When provided, a `-classpath` overrides the system classpath!
+* In case of ambiguity, the complete reference must be written. For instance, static importing `Integer` and `Long` will clash the `MAX_VALUE` constant, use it as `Integer.MAX_VALUE`.
+* An static import can't be of a class! It must of static properties of a class.
+* When provided, a `-classpath` overrides the system's classpath!
 * If a `-classpath` is provided, the path to find the class being executed needs to be provided as well as paths to the dependencies.
 * A jar includes the main directory that it compresses.
-* When the necessary resources - .jars or .classes - are located in the current directory, they are found. Unless some `-classpath` is declared.
+* When the necessary resources - `.jar`s or `.classe`s - are located in the current directory, they are found. Unless some `-classpath` is declared.
 
 Exercises
 ---------

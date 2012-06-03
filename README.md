@@ -10,6 +10,7 @@ Calendar
 4/2/12: confirmation mail arrived, voucher bought and test marked in june 12th.
 4/5/12: calendar started.
 4/8/12: started reading Kathy Sierra's book.
+6/2/12: finished reading Kathy's book.
 
 Certification
 -------------

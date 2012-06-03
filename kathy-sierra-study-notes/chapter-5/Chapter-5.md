@@ -1,15 +1,15 @@
 Chapter 5
 =========
 
-* The `switch` statement can handle ints and enums.
+* The `switch` statement can handle `int`s and `enum`s.
 * The constants on `case` statement must be a compile time constant!
 * A `try` must be followed by _either_ a `catch` or a `finally`.
 * `assert` as identifier (variable, for instance) works using 1.3, but warns. 1.4 and beyond fails, because `assert` became a keyword.
-* Enhance for loop must declare its first operand `(_int_ i: intArray)`.
+* Enhanced `for` loop _must_ declare its first operand `(int i: intArray)`.
 * Static variables are initialized too.
 * Wrapper classes as instance or class variables are initialized too, but to `null` not the primitive default value.
-* A primitive on the second expression of an assert is valid! Including if it's a atribution.
-* Read carefully the line numbers as there're questions that take in account the missing `import` statements.
+* A primitive on the second expression of an assert is valid! Including if it's an attribution.
+* Read carefully the line numbers as there are questions that take in account the missing `import` statements.
 * It's really ok for `main()` to throw exceptions.
 
 Exercises
