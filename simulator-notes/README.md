@@ -43,3 +43,32 @@ But, somehow, the score was wrong, manually looking the right answers, I had a d
 47 of 72. 65.27%
 
 I would pass, but on the edge! :P 65.27%
+
+Exam Lab Preparation 1
+----------------------
+
+### Date
+
+6/4/12
+
+### Impressions
+
+Very high standard! The questions are very hard! And the explanations are great!
+
+I liked it better than Whizlabs and it's free. It even gave me the correct score as I finished the test. It printed it in a fake "certification", which was nice :)
+
+### Notes
+
+* `java.util.List` has the method `toArray()`. `java.util.Arrays` doesn't.
+* Warnings from the compiler about generics:
+    - `List<String> l = new ArrayList();` because of the missing generic on the instantiation.
+    - `List l = null; l.add("hi");` because it's accessing a method of a non-generic collection.
+* When a class implements `Runnable`, it doesn't get `sleep()` for free. It's a `Thread` static method!
+* A compiler error is thrown if the `try` block doesn't execute something that may throw the exception in `catch` block.
+* `Thread` has a constant called `MIN_PRIORITY`.
+* `Boolean` can recieve a `String` and is case-insensitive to it.
+* An array can be passed to a var-arg method.
+* `LinkedList` implements `Queue`.
+* It's allowed to _"override"_ an attribute. As a way to initialize the variable differently.
+
+### Score
