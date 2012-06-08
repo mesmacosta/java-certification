@@ -70,5 +70,10 @@ I liked it better than Whizlabs and it's free. It even gave me the correct score
 * An array can be passed to a var-arg method.
 * `LinkedList` implements `Queue`.
 * It's allowed to _"override"_ an attribute. As a way to initialize the variable differently.
+* `NumberFormatException` is unchecked, `ClassNotFoundException` is checked.
+* `Enum.KEY` and `Enum.valueOf("KEY")` are equivalent.
+* When sorting strings, numbers come before letters.
+* `String` literals are created on `String` pool. But you can create another object for the same string with `new String("literal")`.
+* `concat()` exists in `String` only. Not in `StringBuffer` nor `StringBuilder`.
 
 ### Score
