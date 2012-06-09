@@ -44,7 +44,7 @@ But, somehow, the score was wrong, manually looking the right answers, I had a d
 
 I would pass, but on the edge! :P 65.27%
 
-Exam Lab Preparation 1
+Exam Lab Practice 1
 ----------------------
 
 ### Date
@@ -75,5 +75,33 @@ I liked it better than Whizlabs and it's free. It even gave me the correct score
 * When sorting strings, numbers come before letters.
 * `String` literals are created on `String` pool. But you can create another object for the same string with `new String("literal")`.
 * `concat()` exists in `String` only. Not in `StringBuffer` nor `StringBuilder`.
+* If a jar inside the current directory, you still have to put it the classpath. Therefore, you should always put the jars in the classpath. But the class being compiled is identified with the whole path - or is in the current directory - you can skip it's path from the classpath.
+* `Collections.reverse(List)` returns a `void`. `ArrayList.add(Object)` and `File.delete()` return `boolean`. `FileReader.read(char[])` returns `int`.
+* `Arrays.asList()` is `static`.
+* `Scanner` method to find the next occurrence is `next(String toBeFound)`.
+* `NavigableMap.lowerKey(Object)` may return `null` if there is no key less than the one passed as parameter.
+* Casting a `null` value works.
+* `>>>` is a bitwise unsigned right-shift operator. `<<<` doesn't exist.
+* When calling a var-args method, one can pass either an array or several parameters, but not both.
+* When `printf()` is called with a format `%b`, the value passed will be interpreted as:
+    - if `null`, prints `false`
+    - if `boolean` or `Boolean`, prints the respective value
+    - else, prints `true`.
+* If you try to call `NavigableSet.subSet()`, the first value must come before the second value in the given order of the set. What that means is, if the set is in `reverseOrder()` the fist value must be higher than the second. Otherwise, an `IllegalArgumentException` is thrown.
+* Non-static inner classes cannot have `static` members. Because an non-static inner class can only exist when tied to the enclosing class instance, there would be no way to call the static method in the non-static inner class.
+* `volatile` and `transient` cannot be applied to methods.
+* `Comparable` is in `java.lang` and `Scanner` is in `java.util`.
+* `Calendar.getTime()` returns `Date`.
+* When trying to add an `Object` to an `String`, in that order, the `toString()` method of `Object` is called and the sum succeeds.
+* If you pass an object to a `TreeSet` and it doesn't implement `Comparable`, nor a `Comparator` was provided, you get a _runtime_ error! A `ClassCastException` is thrown.
+* `Scanner` default separator is a single space. This applies to `nextLong()` calls, for instance.
+* The compiler knows about unreachable statements. Therefore `throw new Exception(); doSomething();` won't compile. The compiler knows that `doSomething();` will never happen.
+* `List` has a `size()` method, not `length()`.
+* `<? super A>` includes `A` itself.
+* `System.out.println(someMethodThatReturnsVoid())` is a compile time error.
+* When an assertion fails, it throws an `AssertionError` and the message after the `:` is evaluated. Note that `Error` isn't an `Exception`.
+* When you own the lock for a `Thread` object, not necessarily you own the lock for the `Runnable` underneath.
 
 ### Score
+
+39 of 72. 54% I wouldn't pass. But they said that when you score 60% in this exam, you score 90% in real Oracle exam. So I'm ok with the result :P
