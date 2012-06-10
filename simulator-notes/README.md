@@ -129,6 +129,38 @@ Even harder than the Practice exam, of course. Really smart questions and I can 
 * An `static` inner class can't inherit from a non-static one.
 * On a string format for `printf()` the modifier `(` will enclose negative values with parentheses.
 * `private abstract` can be used in inner classes. Another inner class may extend the abstract one and implement the private method.
+* The mystery about generics - harder part of this subject - is this:
+    An variable declared as `List<? extends Number> l` may receive an `new ArrayList<Number>()` or an `new ArrayList<Integer>()` or an `new ArrayList<Short>`. Therefore, the compiler can't know what type of values the list can really hold!
+    This way, to be safe, the compiler won't let anything to be passed to the `add()` method. It's just invalid to call it!
+    If it's the other way around, the list is declared as `List<? super Number> l` the compiler knows that something like `new ArrayList<Number>` or `new ArrayList<Object>` will be atributed to the variable. At least the contract of `Number` will be respected.
+    In this case, the `add()` method is valid for any value that passes the test of `instanceof Number`. In other words, any object of `Number` or it's children.
+* The order of steps executed on initialization of an object is:
+    - Start the constructor.
+    - Call the parent's constructor.
+    - Initialize all properties with their default values.
+    - Execute all initialization blocks, in the order they appear.
+    - Proceed with constructor.
+    - By the end of this process all instance final variables should be initialized.
+* Like in C++, an `enum` is a lot like a class. It can even have a `main()` method!
+* `Thread.LOW_PRIORITY` and `Thread.HIGH_PRIORITY` aren't defined. The ones that are defined are `Thread.MIN_PRIORITY` and `Thread.MAX_PRIORITY`.
+* `new Thread(String)` is defined.
+* `goto` and `const` aren't in use but are reserved words.
+* `$JAVA_HOME/jre/lib/ext` is the place to put the jars that you don't want to specify in `classpath`.
+* `import java.lang.Integer.*` is valid. It's trying to import all static inner classes, then they could be used without specifying `Integer`, anymore. There are no public inner classes in `Integer`, but nevermind that :P
+* `Thread.sleep(long)` doesn't accept an `int`. Be careful!!
+* The `native` keyword means the implementation will be written in another language - such as platform-dependent C, for instance. Therefore, the declaration `public void native method()` is ok.
+* It's not ok for an message of an assert to have collateral effects. Asserts also shouldn't verify the values being passed as parameters to an public method. Asserts are appropriate to check the parameters being passed to private methods and to check the result of any method.
+* `String.replace(char, char)` and `StringBuilder.replace(int, int, String)` are equivalent.
+* On object deserialization, the first class in the hierarchy that isn't `Serializable` will have it's default (no-arg) constructor called. If it doesn't have one, an `InvalidClassException` will be called.
+* `Exception` and `Throwable` are both checked an unchecked at the same time. That happens because `RuntimeException` is a child of `Exception`, as well as any other checked exception. Also, `Exception` happens to be child of `Throwable`, which justifies the same behavior for it.
+    Consequences of this fact are:
+    - `try{} catch(Exception ex){}` is valid! Because `Exception` acts as an unchecked exception.
+    - `void method() { throw new Exception(); }` won't compile because the method isn't declared to throw anything. And `Exception` acts as checked.
+    Confusing!!!
+* `catch(SomeClass ex)`, for this statement to be valid `SomeClass`'s object must pass the `instanceof Throwable` test.
+* This is a very edge case: a final class array cannot be casted to an external interface array. dumbsayswhat???
+* `synchronized(null)` is a compile time error. Because the compiler knows! It just knows!
+
 
 ### Score
 
