@@ -105,3 +105,31 @@ I liked it better than Whizlabs and it's free. It even gave me the correct score
 ### Score
 
 39 of 72. 54% I wouldn't pass. But they said that when you score 60% in this exam, you score 90% in real Oracle exam. So I'm ok with the result :P
+
+Exam Lab Final Exam
+-------------------
+
+### Date
+
+6/9/12
+
+### Impressions
+
+Even harder than the Practice exam, of course. Really smart questions and I can feel the progress. Really satisfied with this tool \o/
+
+### Notes
+
+* `tailSet(Object)` returns `SortedSet`. `tailSet(Object, boolean)` returns `NavigableSet`, it was introduced in Java 1.6.
+* `java.util.Arrays.sort(Object[])` may throw `ClassCastException` if there are, in the array being sorted, two vales that don't mutually compare, such as `String`s and `Integer`s.
+* `Locale` doesn't have an no-parameter constructor.
+* `java.text.DateFormat` doesn't have a `setLocale()` method. The `Locale` should be set on the object's constructor.
+* `File.renameTo(File)` this method doesn't take an `String` as parameter. But a `File`, instead.
+* `Thread.yield()` is an `static` method.
+* `toUpperCase()` is a method of `String`. Neither `StringBuilder` or `StringBuffer` have it.
+* An `static` inner class can't inherit from a non-static one.
+* On a string format for `printf()` the modifier `(` will enclose negative values with parentheses.
+* `private abstract` can be used in inner classes. Another inner class may extend the abstract one and implement the private method.
+
+### Score
+
+45 of 72. 62% almost there! I'm proud! :D
