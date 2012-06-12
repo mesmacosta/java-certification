@@ -21,7 +21,7 @@ But, somehow, the score was wrong, manually looking the right answers, I had a d
 * `hashCode()` returns `int` and should be calculated using information of the object that isn't final!
 * `java.util.LinkedHashMap` is a `Map` that maintains information about access order - LRU.
 * `Collection.toArray()` returns an array of the type specified by the first parameter. Example: `String[] s = list.toArray(new String[0])`.
-* The `equals()` method of `List`s is overridden, it takes in account the size and the equality of elements in the `List`s. The actual object that represents the lists are ignore, which would be default `equals()` behavior as implemented by `Object`.
+* The `equals()` method of `List`s is overridden, it takes in account the size and the equality of elements in the `List`s. The actual object that represents the lists are ignored, which would be default `equals()` behavior as implemented by `Object`.
 * `Integer` wrapper class doesn't work fine with `==`. Compare the values, instead, using `intValue()`.
 * To iterate through entries of a `Map`, use `for(Map.Entry par : map.entrySet())`.
 * Remember that a non-static inner class can only be instantiated if tied to an object of the enclosing class. Thus, use `new OuterClass().new InnerClass()`.
@@ -148,7 +148,7 @@ Even harder than the Practice exam, of course. Really smart questions and I can 
 * `$JAVA_HOME/jre/lib/ext` is the place to put the jars that you don't want to specify in `classpath`.
 * `import java.lang.Integer.*` is valid. It's trying to import all static inner classes, then they could be used without specifying `Integer`, anymore. There are no public inner classes in `Integer`, but nevermind that :P
 * `Thread.sleep(long)` doesn't accept an `int`. Be careful!!
-* The `native` keyword means the implementation will be written in another language - such as platform-dependent C, for instance. Therefore, the declaration `public void native method()` is ok.
+* The `native` keyword means the implementation will be written in another language - such as platform-dependent C, for instance. Therefore, the declaration `public void native method();` is ok.
 * It's not ok for an message of an assert to have collateral effects. Asserts also shouldn't verify the values being passed as parameters to an public method. Asserts are appropriate to check the parameters being passed to private methods and to check the result of any method.
 * `String.replace(char, char)` and `StringBuilder.replace(int, int, String)` are equivalent.
 * On object deserialization, the first class in the hierarchy that isn't `Serializable` will have it's default (no-arg) constructor called. If it doesn't have one, an `InvalidClassException` will be called.

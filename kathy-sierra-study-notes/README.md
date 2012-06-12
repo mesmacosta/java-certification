@@ -5,7 +5,7 @@ Chapter 1
 ---------
 
 * Identifiers can start with `$`.
-* Contants are created using `static` and `final`.
+* Constants are created using `static` and `final`.
 * Event listener method names must start with `add`. Methods to unregister the listener must start with `remove`.
 * Classes nonaccess modifiers: `abstract`, `final` and `strictfp`.
 * `String` class is `final`.
@@ -89,7 +89,7 @@ Chapter 3
 ---------
 
 * Instance variables and objects belong on the heap. Variables and method calls are on the stack.
-* When expressing literals, double is the default. For a float, a F must be appended.
+* When expressing literals, double is the default. For a float, a `F` must be appended.
 * The result of a operation with two values smaller than ints is an int.
 * Array values are always initialized to the type's default value.
 * For primitive types, putting a compatible element in array element is ok. But trying to assign an array of char in an variable that is an array of int is invalid!
@@ -166,7 +166,7 @@ Chapter 4
 9.  C,F ✔
 10. D   ✔
 
-Result: 90% :))
+Result: 90% :)
 
 Chapter 5
 ---------
