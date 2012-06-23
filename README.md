@@ -11,6 +11,7 @@ Calendar
 * 4/5/12: calendar started.
 * 4/8/12: started reading Kathy Sierra's book.
 * 6/2/12: finished reading Kathy's book.
+* 6/12/12: performed the test.
 
 Certification
 -------------
@@ -41,3 +42,7 @@ References
 * [http://blog.camilolopes.com.br/simscjpfree/](http://blog.camilolopes.com.br/simscjpfree/)
 * [http://fredericoarantes.blogspot.com.br/2010/01/vacas-pro-curral-certificacao-scjp.html](http://fredericoarantes.blogspot.com.br/2010/01/vacas-pro-curral-certificacao-scjp.html)
 * [http://www.javabeat.net/products/cert/scjp-1-6.php](http://www.javabeat.net/products/cert/scjp-1-6.php)
+
+### Conclusions
+
+I wrote a blog post about the certification which you can read [here](http://leafac.com/post/25734543996/yet-another-scjp-ocjp-exam-review).
